@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>TE2021P600AP24821</MsgId>
+      <CreDtTm>2022-01-28T18:40:53Z</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <CtrlSum>456000.38</CtrlSum>
+      <InitgPty>
+        <Nm>Phillip Laschek</Nm>
+        <Id>
+          <OrgId>
+            <BICOrBEI>HSHNDEHHXXX</BICOrBEI>
+          </OrgId>
+        </Id>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>TE2021P600AP2886</PmtInfId>
+      <PmtMtd>TRF</PmtMtd>
+      <BtchBookg>false</BtchBookg>
+      <NbOfTxs>1</NbOfTxs>
+      <CtrlSum>456000.38</CtrlSum>
+      <PmtTpInf>
+        <InstrPrty>HIGH</InstrPrty>
+        <SvcLvl>
+          <Cd>SEPA</Cd>
+        </SvcLvl>
+        <CtgyPurp>
+          <Cd>TREA</Cd>
+        </CtgyPurp>
+      </PmtTpInf>
+      <ReqdExctnDt>2022-01-28</ReqdExctnDt>
+      <Dbtr>
+        <Nm>Phillip Laschek</Nm>
+        <PstlAdr>
+          <Ctry>DE</Ctry>
+          <AdrLine>Holtenauer Strasse 250</AdrLine>
+          <AdrLine>24116 Kiel</AdrLine>
+        </PstlAdr>
+        <Id>
+          <OrgId>
+            <BICOrBEI>HSHNDEHHXXX</BICOrBEI>
+          </OrgId>
+        </Id>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>DE43210500001200001021</IBAN>
+        </Id>
+        <Ccy>EUR</Ccy>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BIC>HSHNDEHHXXX</BIC>
+        </FinInstnId>
+      </DbtrAgt>
+      <ChrgBr>SLEV</ChrgBr>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>TE2021P600AP2548</InstrId>
+          <EndToEndId>TE2021P600AP247037</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">456000.38</InstdAmt>
+        </Amt>
+        <UltmtDbtr>
+          <Nm>Phillip Laschek</Nm>
+          <Id>
+            <OrgId>
+              <Othr>
+                <Id>ULTIMATE-ID000001</Id>
+                <SchmeNm>
+                  <Prtry>SEPA</Prtry>
+                </SchmeNm>
+                <Issr>546-876-345</Issr>
+              </Othr>
+            </OrgId>
+          </Id>
+        </UltmtDbtr>
+        <CdtrAgt>
+          <FinInstnId>
+            <BIC>COBADEFFXXX</BIC>
+          </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>Fischer, Jonas</Nm>
+          <PstlAdr>
+            <Ctry>DE</Ctry>
+            <AdrLine>Hauptstrasse 88</AdrLine>
+            <AdrLine>21039 Escheburg</AdrLine>
+          </PstlAdr>
+          <Id>
+            <OrgId>
+              <Othr>
+                <Id>COBADEFFXXX</Id>
+                <SchmeNm>
+                  <Prtry>SEPA</Prtry>
+                </SchmeNm>
+                <Issr>987-236-910</Issr>
+              </Othr>
+            </OrgId>
+          </Id>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>DE83200400000630148502</IBAN>
+          </Id>
+        </CdtrAcct>
+        <UltmtCdtr>
+          <Nm>Fischer, Jonas</Nm>
+          <Id>
+            <PrvtId>
+              <DtAndPlcOfBirth>
+                <BirthDt>1980-01-21</BirthDt>
+                <PrvcOfBirth>Schleswig-Holstein</PrvcOfBirth>
+                <CityOfBirth>21039 Escheburg</CityOfBirth>
+                <CtryOfBirth>DE</CtryOfBirth>
+              </DtAndPlcOfBirth>
+            </PrvtId>
+          </Id>
+        </UltmtCdtr>
+        <Purp>
+          <Cd>TREA</Cd>
+        </Purp>
+        <RmtInf>
+          <Ustrd>TE2021P600AP21306455746</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>

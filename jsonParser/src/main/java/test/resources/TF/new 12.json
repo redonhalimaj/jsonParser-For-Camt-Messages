@@ -1,0 +1,94 @@
+{
+  "eventType": "TphWorkflowEntityBamNotification1",
+  "eventValue": {
+    "applicationInstanceId": "TPH1",
+    "bamNotificationCategory": "ENTITY_PROCESSING_OVERDUE",
+    "bamNotificationMessage": "Credit account not found",
+    "componentInstanceId": "JS1",
+    "cpeClient": "HCOB",
+    "cpeEntityKey": "HCOB-TPH1-PAYMENT-43488",
+    "eventType": "TphWorkflowEntityBamNotification1",
+    "newTphWorkflowState": "MATCHING",
+    "notificationCreationTimestamp": "2022-01-12T13:07:14.842861Z",
+    "oldTphWorkflowState": "ROUTE",
+    "originalEventTimestamp": "2022-01-12T13:01:18.639Z",
+    "tphEntityId": 43488,
+    "tphEntityType": "PAYMENT",
+    "tphWorkflowEntity": {
+      "entityValue": {
+        "applicationInstanceId": "TPH1",
+        "chargeBearer": "SHAR",
+        "cpeClient": "HCOB",
+        "cpeEntityKey": "HCOB-TPH1-PAYMENT-43488",
+        "creditor": {
+          "iban": "DE47210500001001429921",
+          "name": "Land- u. See-Transport KG"
+        },
+        "creditorAgentBic": "HSHNDEHHXXX",
+        "debtor": {
+          "iban": "TR290013400001565469400003",
+          "name": "International Im- u. Export Absender SPA ve. Tic.Al"
+        },
+        "debtorAgentBic": "DENITRISXXX",
+        "incomingReference": "Matching01",
+        "instructedAgentBic": "HSHNDEHHXXX",
+        "instructedAmountWithCurrency": {
+          "amount": 3001,
+          "currency": "USD"
+        },
+        "instructingAgentBic": "DENITRISXXX",
+        "instructionId": "Matching01",
+        "remittanceInformationUnstructured": "TFAZVABRE1REG2-maximale Belegung Auftraggeber und Verwendungszweck 1234567890123456789012345678901234512345678901234567890123456789012345",
+        "requestedExecutionDate": "2022-01-12",
+        "settlementAmountWithCurrency": {
+          "amount": 3001,
+          "currency": "USD"
+        },
+        "statusMessage": "Credit account not found",
+        "tphClient": "HCOB",
+        "tphEntityId": 43488,
+        "tphEntityType": "PAYMENT",
+        "tphInsertDateTime": "2022-01-12T13:01:07.467Z",
+        "tphLastModifiedDateTime": "2022-01-12T13:01:18.639Z",
+        "tphMainCreditBooking": {
+          "wasDelivered": false
+        },
+        "tphMainDebitBooking": {
+          "accountCurrency": "USD",
+          "accountNumber": "1200020270USD",
+          "accountType": "NOSTRO",
+          "wasDelivered": false
+        },
+        "tphPaymentId": 43488,
+        "tphPaymentProduct": {
+          "description": "Cross-border remittance customer (HSCFC)",
+          "productId": 160,
+          "productName": "HSCFC",
+          "return": false,
+          "returnRelated": false,
+          "tphPaymentScheme": "INDIVIDUAL"
+        },
+        "tphPaymentRecallState": "NOT_RECALLABLE",
+        "tphProcessingDateTime": "2022-01-12T00:00:00Z",
+        "tphRoutingSource": {
+          "bic": "DENITRISXXX",
+          "channel": "EXT_FINMAPP_MT",
+          "clearing": false,
+          "internal": false,
+          "system": "FIN"
+        },
+        "tphRoutingTarget": {
+          "bic": "HSHNDEHHXXX",
+          "channel": "-",
+          "clearing": false,
+          "internal": true,
+          "system": "INT"
+        },
+        "tphWorkflowStateName": "MATCHING",
+        "uetr": "aadebfbd-ebfc-4adf-9fcd-adcbcfeeaefb"
+      },
+      "subType": "IndividualCreditTransfer1",
+      "tphProviderVersion": "2.0.1-tph-4.0.0-beta3"
+    }
+  }
+}

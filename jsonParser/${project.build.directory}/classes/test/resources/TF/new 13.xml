@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCLSCT:BBkSCFBlkCdtTrf xmlns:SCLSCT="urn:BBkSCF:xsd:$BBkSCFBlkCdtTrf"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:BBkSCF:xsd:$BBkSCFBlkCdtTrf BBkSCFBlkCdtTrf.xsd">
+  <SCLSCT:SndgInst>MARKDEFF</SCLSCT:SndgInst>
+  <SCLSCT:RcvgInst>HSHNDEFF</SCLSCT:RcvgInst>
+  <SCLSCT:SrvcId>SCT</SCLSCT:SrvcId>
+  <SCLSCT:TstCode>P</SCLSCT:TstCode>
+  <SCLSCT:FType>SCF</SCLSCT:FType>
+  <SCLSCT:FileRef>DMSCTB2105200900</SCLSCT:FileRef>
+  <SCLSCT:RoutingInd>ALL</SCLSCT:RoutingInd>
+  <SCLSCT:FileBusDt>2022-01-28</SCLSCT:FileBusDt>
+  <SCLSCT:FileCycleNo>01</SCLSCT:FileCycleNo>
+  <SCLSCT:FIToFICstmrCdtTrf xmlns="urn:iso:std:iso:20022:tech:xsd:sct:pacs.008.001.02">
+    <GrpHdr>
+      <MsgId>MsgId-1010</MsgId>
+      <CreDtTm>2022-01-28T13:21:28.490Z</CreDtTm>
+      <NbOfTxs>2</NbOfTxs>
+      <TtlIntrBkSttlmAmt Ccy="EUR">99.99</TtlIntrBkSttlmAmt>
+      <IntrBkSttlmDt>2022-01-28</IntrBkSttlmDt>
+      <SttlmInf>
+        <SttlmMtd>CLRG</SttlmMtd>
+        <ClrSys>
+          <Prtry>SCL</Prtry>
+        </ClrSys>
+      </SttlmInf>
+      <InstdAgt>
+        <FinInstnId>
+          <BIC>PBNKDEFFXXX</BIC>
+        </FinInstnId>
+      </InstdAgt>
+    </GrpHdr>
+    <CdtTrfTxInf>
+      <PmtId>
+        <InstrId>InstrId-2022-01-28-1010-1</InstrId>
+        <EndToEndId>EndToEndId-2022-01-28-1010-1</EndToEndId>
+        <TxId>TxId-2022-01-28-1010-1</TxId>
+      </PmtId>
+      <PmtTpInf>
+        <SvcLvl>
+          <Cd>SEPA</Cd>
+        </SvcLvl>
+        <LclInstrm>
+          <Cd>LocalInstrument0123456789</Cd>
+        </LclInstrm>
+        <CtgyPurp>
+          <Cd>Trea</Cd>
+        </CtgyPurp>
+      </PmtTpInf>
+      <IntrBkSttlmAmt Ccy="EUR">44.44</IntrBkSttlmAmt>
+      <ChrgBr>SLEV</ChrgBr>
+      <InstgAgt>
+        <FinInstnId>
+          <BIC>PBNKDEFFXXX</BIC>
+        </FinInstnId>
+      </InstgAgt>
+      <Dbtr>
+        <Nm>Max Geldsender GmbH</Nm>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>DE93120800004097394400</IBAN>
+        </Id>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BIC>DRESDEFF120</BIC>
+        </FinInstnId>
+      </DbtrAgt>
+      <CdtrAgt>
+        <FinInstnId>
+          <BIC>HSHNDEHHXXX</BIC>
+        </FinInstnId>
+      </CdtrAgt>
+      <Cdtr>
+        <Nm>PHILIPP LASCHEK</Nm>
+      </Cdtr>
+      <CdtrAcct>
+        <Id>
+          <IBAN>DE77210500001200000021</IBAN>
+        </Id>
+      </CdtrAcct>
+      <RmtInf>
+        <Ustrd>Zahlung von TE2020P300AP11667540192</Ustrd>
+      </RmtInf>
+    </CdtTrfTxInf>
+  </SCLSCT:FIToFICstmrCdtTrf>
+</SCLSCT:BBkSCFBlkCdtTrf>

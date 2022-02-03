@@ -1,0 +1,4 @@
+This camt027 was send by: MARKDEFF
+This camt027 was received by: BANKDEFFXXX
+The camt027 original message ID: SPARDEFFXXX20190528SCTP8001001
+The camt027 original message name ID: PACS.008
