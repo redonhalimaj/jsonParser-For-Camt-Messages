@@ -22,7 +22,7 @@ public class XMLtoJson {
 
         try{
 
-            String xmlFile = "C:\\Users\\redon\\Desktop\\jsonParser\\src\\main\\java\\test\\resources\\Nr_04a_BBkOQFBlkCdtTrf_camt.027.xml";
+            String xmlFile = "C:\\Users\\redon\\Desktop\\jsonParser\\src\\main\\java\\test\\resources\\camt27.xml";
             String xml = readFileAsString(xmlFile);
             // System.out.println("The Camt 027 in XML format: ");
             // System.out.println(xml);
