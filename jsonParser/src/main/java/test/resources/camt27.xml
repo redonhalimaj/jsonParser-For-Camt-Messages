@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BBkOQF:BBkOQFBlkCdtTrf xmlns:BBkOQF="urn:BBkOQF:xsd:$BBkOQFBlkCdtTrf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:BBkOQF:xsd:$BBkOQFBlkCdtTrf BBkOQFBlkCdtTrf.xsd">
-	<BBkOQF:SndgInst>MARKDEFFDAFINAGALANI</BBkOQF:SndgInst>
+	<BBkOQF:SndgInst>MARKDEFF</BBkOQF:SndgInst>
 	<BBkOQF:RcvgInst>BANKDEFFXXX</BBkOQF:RcvgInst>
 	<BBkOQF:SrvcId>SCT</BBkOQF:SrvcId>
 	<BBkOQF:TstCode>T</BBkOQF:TstCode>

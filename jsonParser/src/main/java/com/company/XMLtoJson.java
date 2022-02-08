@@ -22,7 +22,7 @@ public class XMLtoJson {
 
         try{
 
-            String xmlFile = "C:\\Users\\redon\\Desktop\\jsonParser\\src\\main\\java\\test\\resources\\camt27.xml";
+            String xmlFile = "C:\\Users\\redon\\Desktop\\Apollo\\ParserFormat\\jsonParser\\src\\main\\java\\test\\resources\\camt27.xml";
             String xml = readFileAsString(xmlFile);
             // System.out.println("The Camt 027 in XML format: ");
             // System.out.println(xml);
@@ -33,13 +33,17 @@ public class XMLtoJson {
             System.out.println("==================================================\n");
             // System.out.println("The Camt 027 in JSON format: ");
             // System.out.println(xmlToJson);
-            FileWriter fw = new FileWriter("C:\\Users\\redon\\Desktop\\jsonParser\\src\\main\\java\\test\\resources\\writtenJson.json");
+            FileWriter fw = new FileWriter("C:\\Users\\redon\\Desktop\\Apollo\\ParserFormat\\jsonParser\\src\\main\\java\\test\\resources\\writtenJson.json");
             fw.write(xmlToJson.formatted("\n"));
             fw.close();
+            JSONObject jsonObjectUnderlying = jsonObject.getJSONObject("BBkOQFBlkCdtTrf").getJSONObject("ClmNonRct").getJSONObject("Undrlyg");
+            JSONObject jsonObjectOriginalTransactionReference = jsonObjectUnderlying.getJSONObject("IntrBk").getJSONObject("OrgnlTxRef");
             String sendingInstitution = jsonObject.getJSONObject("BBkOQFBlkCdtTrf").get("SndgInst").toString();
             String receivingInstitution = jsonObject.getJSONObject("BBkOQFBlkCdtTrf").get("RcvgInst").toString();
-            String messageID = jsonObject.getJSONObject("BBkOQFBlkCdtTrf").getJSONObject("ClmNonRct").getJSONObject("Undrlyg").getJSONObject("IntrBk").getJSONObject("OrgnlGrpInf").get("OrgnlMsgId").toString();
-            String messageNameID = jsonObject.getJSONObject("BBkOQFBlkCdtTrf").getJSONObject("ClmNonRct").getJSONObject("Undrlyg").getJSONObject("IntrBk").getJSONObject("OrgnlGrpInf").get("OrgnlMsgNmId").toString();
+            String messageID = jsonObjectUnderlying.getJSONObject("IntrBk").getJSONObject("OrgnlGrpInf").get("OrgnlMsgId").toString();
+            String messageNameID = jsonObjectUnderlying.getJSONObject("IntrBk").getJSONObject("OrgnlGrpInf").get("OrgnlMsgNmId").toString();
+            String instructionInfo = jsonObject.getJSONObject("BBkOQFBlkCdtTrf").getJSONObject("ClmNonRct").getJSONObject("InstrForAssgne").get("InstrInf").toString();
+            String beneficiaryBIC = jsonObjectOriginalTransactionReference.getJSONObject("CdtrAgt").getJSONObject("FinInstnId").get("BICFI").toString();
             System.out.println("This camt027 was send by: "+sendingInstitution);
             System.out.println("This camt027 was received by: "+ receivingInstitution);
             System.out.println("The camt027 original message ID: "+ messageID);
@@ -48,13 +52,15 @@ public class XMLtoJson {
 
             try{
 
-                String newFile = "C:\\Users\\redon\\Desktop\\jsonParser\\src\\main\\java\\test\\resources\\outputFile.txt";
+                String newFile = "C:\\Users\\redon\\Desktop\\Apollo\\ParserFormat\\jsonParser\\src\\main\\java\\test\\resources\\outputFile.txt";
                 File outputFile = new File(newFile);
                 FileWriter fw1 = new FileWriter(outputFile);
                 fw1.write("This camt027 was send by: "+sendingInstitution+"\n");
                 fw1.write("This camt027 was received by: "+ receivingInstitution+"\n");
                 fw1.write("The camt027 original message ID: "+ messageID+"\n");
                 fw1.write("The camt027 original message name ID: "+ messageNameID+"\n");
+                fw1.write("Instruction Info of this message: "+ instructionInfo+ "\n");
+                fw1.write("Beneficiary Institution: "+ beneficiaryBIC+ "\n");
                 fw1.close();
 
             }catch(Exception ex)
